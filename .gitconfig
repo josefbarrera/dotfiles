@@ -2,15 +2,35 @@
     #name = 
     #email = 
 [core]
-	filemode = false
-	editor = vim
+    filemode = false
+    editor = vim
+    excludesfile = /opt/boxen/config/git/gitignore
 [color]
-	ui = true
+    ui = true
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = green bold
+    local = green
+    remote = red
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = green
+    changed = red
+    untracked = cyan
 [alias]
-	co = checkout
-	ci = commit
-	st = status
-	br = branch
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	type = cat-file -t
-	dump = cat-file -p
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+
+[credential]
+    helper = /opt/boxen/bin/boxen-git-credential
