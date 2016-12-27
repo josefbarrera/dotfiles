@@ -7,3 +7,8 @@ fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+
+# Access Homestead globally
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
