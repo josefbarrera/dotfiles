@@ -1,2 +1,3 @@
 --ignore-file=is:tags
 --smart-case
+--ignore-dir=match:.env
