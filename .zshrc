@@ -112,7 +112,7 @@ alias rm='rm -i'
 alias dk='docker'
 alias dkc='docker-compose'
 alias dkm='docker-machine'
-alias awsume=". awsume"
+#alias awsume=". awsume"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
