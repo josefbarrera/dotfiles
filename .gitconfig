@@ -4,7 +4,6 @@
 [core]
     filemode = false
     editor = vim
-    excludesfile = /opt/boxen/config/git/gitignore
 [color]
     ui = true
     branch = auto
@@ -32,6 +31,3 @@
     type = cat-file -t
     dump = cat-file -p
     brav = branch -av
-
-[credential]
-    helper = /opt/boxen/bin/boxen-git-credential
