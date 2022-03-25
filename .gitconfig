@@ -4,6 +4,7 @@
 [core]
     filemode = false
     editor = vim
+    excludesFile = /Users/<user>/.gitignore
 [color]
     ui = true
     branch = auto
@@ -31,3 +32,5 @@
     type = cat-file -t
     dump = cat-file -p
     brav = branch -av
+[init]
+    defaultBranch = master
